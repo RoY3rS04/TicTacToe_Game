@@ -47,8 +47,6 @@ function clickingEvent(e) {
         }
     })
 
-    console.log(xWins, oWins);
-
     wins.forEach((item) => {
         if (xWins.length >= 3 && (xWins.sort().join("").includes(item.join("")) || xWins.sort((a,b) => {
             return b - a;
